@@ -9,10 +9,10 @@
 #define distStart 0
 #define distEnd 199
 
-int comparator(const void *p, const void *q) { 
+int comparator(const void *a, const void *b) { 
     // Get the values at given addresses 
-    int l = *(const int *)p; 
-    int r = *(const int *)q; 
+    int l = *(const int *)a; 
+    int r = *(const int *)b; 
 
     return l-r;
 } 
